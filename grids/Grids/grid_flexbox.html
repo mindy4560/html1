@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Melinda Krause Lab 3 -->
+
+    <meta charset="UTF-8">
+    <meta name="Description" content="CWeb 1010 at Dunwoody">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Melinda Krause Lab 3</title>
+
+<style>
+
+body {
+	background-image: url('nealmindy.jpg');
+	background-repeat: repeat;	
+}
+
+h1 {
+	color: aqua;
+}
+
+p {
+	color: aqua;
+	font-size: 25px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgreen;
+}
+
+.flex-container > div {
+  background-color: lightpink;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px);
+	body{
+		background-color: blue;
+	}
+
+</style>
+</head>
+<body>
+
+
+<h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+</body>
+</html>

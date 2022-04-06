@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Melinda Krause Lab 3 -->
+
+    <meta charset="UTF-8">
+    <meta name="Description" content="CWeb 1010 at Dunwoody">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Melinda Krause Lab 3</title>
+
+<style>
+.grid-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  gap: 50px;
+  background-color: #2196F3;
+  padding: 50px;
+}
+
+.grid-container > div {
+  background-color: cyan;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px);
+	body{
+		background-color: blue;
+	}
+	
+</style>
+</head>
+<body>
+
+<h1>The justify-content Property</h1>
+
+<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+<p>The value "space-evenly" will give the columns equal amount of space between, and around them:</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+
+</body>
+</html>
