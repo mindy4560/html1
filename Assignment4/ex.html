@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!--This is an example of a comment-->
+<!-- Melinda Krause Lab 4 -->
+
+    <meta charset="UTF-8">
+    <meta name="Description" content="CWeb 1010 at Dunwoody">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Melinda Krause Lab 4</title>
+
+<style>
+
+/* This is a CSS Comment */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0;
+}
+	
+@media screen and ( max-width:600px ) {
+            body { background: green; }
+}
+
+@media screen and ( max-width:600px ) {
+            body { background: purple; }
+}
+		
+</style>
+
+</head>
+<body>
+
+<div class="grid-container">
+  <div><img src="sunset.jpg" alt="Sunset" width="400" height="400"></div>
+  <div><img src="dubai.jpg" alt="Dubai" width="400" height="400"></div>
+  <div><img src="elephants.jpg" alt="Elephants" width="400" height="400"></div>
+</div>
+
+<div onclick="window.alert('Triggered by Inline JS')"> Click Me </div>
+	<button type="button" onclick="myFunction()">Set background color</button>
+	<script>
+	// This is an example of a Java Script comment
+	function myFunction() {
+	document.body.style.backgroundColor = "aqua"; }
+	</script>
+
+</body>
+</html>
