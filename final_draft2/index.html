@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Melinda Krause Assignment 6 -->
+
+    <meta charset="UTF-8">
+    <meta name="Description" content="CWeb 1010 at Dunwoody">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Melinda Krause Home Page</title>
+
+<style>
+
+body {
+	background-color: lightblue;
+	background-repeat: repeat;	
+}
+
+/* Style the header */
+h1 {
+  background-color: #ff9a8d;
+  text-align: center;
+  font-family: 'helvetica';
+  font-size: 44px;
+  color: #4a536b;
+}
+
+/* Style the nav bar */
+nav {
+  text-align: center;
+  font-size: 30px;
+  color: #4a536b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: lightblue;
+	background-repeat: repeat;
+}
+
+#flex-box1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: #D259C6;
+}
+  
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #D259C6;
+}
+  
+  /* Style the header */
+h2 {
+  background-color: #ff9a8d;
+  margin: auto;
+  text-align: center;
+  font-family: 'helvetica';
+  font-size: 30px;
+  color: #4a536b;
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Cats</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="facts.html">Facts</a>
+<a href="breeds.html">Popular Breeds</a>
+<a href="resources.html">Resources</a>
+
+</nav>
+
+<img src="catbanner.jpg" alt="cat banner" width="1500" height="200">
+
+<div id="flex-box1">
+<div><img src="catsymbol.png" alt="cat symbol"></div>
+<div><input type="text" value="enter location"></div>
+<div><a href="">Find a cat</a></div>
+
+</div>
+
+<br>
+
+<h2>Pets Available for Adoption</h2>
+
+<div class="flex-container">
+  <div><img src="cat1.jpg" alt="Cat One">
+
+  <h1>Scout</h1></div>
+  
+  <div><img src="cat2.jpg" alt="Cat Two">
+
+  <h1>Pablo</h1></div>
+  
+  <div><img src="cat3.jpg" alt="Cat Three">
+
+  <h1>Midnight</h1></div>
+  
+  <div><img src="cat4.jpg" alt="Cat Four">
+
+  <h1>Briggs</h1></div>
+  </div>
+  
+<br>
+
+ <footer>
+  <p>Footer</p>
+  <div onclick="window.alert('Triggered by Inline JS')"> Click Me </div>
+	<button type="button" onclick="myFunction()">Set background color</button>
+	<script>
+	// This is an example of a Java Script comment
+	function myFunction() {
+	document.body.style.backgroundColor = "aqua"; }
+</script>
+</footer>
+
+</body>
+</html>
